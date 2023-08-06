@@ -1,0 +1,225 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Formulário de Contato</title>
+    <link rel="icon" href="img/favicon/favicon.ico" />
+</head>
+<style>
+    table.top {
+        background-color: white;
+        border-top-color: #4285f4;
+        border-left-color: #cccccc;
+        border-right-color: #cccccc;
+        border-bottom-color: #cccccc;
+        border-top-width: 10px;
+        border-style: solid;
+        padding: 4px;
+        border-radius: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 13px;
+        padding-right: 14px;
+        margin-top: 12px;
+    }
+
+    table.default {
+        background-color: white;
+        border-color: #cccccc;
+        border-style: solid;
+        padding: 4px;
+        border-radius: 8px;
+        padding-top: 13px;
+        padding-bottom: 20px;
+        padding-left: 13px;
+        padding-right: 14px;
+    }
+
+    td.title {
+        font-family: Arial;
+        font-size: 22pt;
+        font-weight: 500;
+        border: none;
+    }
+
+    td.per {
+        font-family: Arial;
+        font-size: 12pt;
+        border: none;
+        line-height: 1.5;
+    }
+
+    td.res {
+        font-family: Arial;
+        font-size: 11pt;
+        border: none;
+        line-height: 1.5;
+    }
+
+    p.primary {
+        font-family: Arial;
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    p.secondary {
+        font-family: Arial;
+        font-size: 11pt;
+        text-align: center;
+    }
+
+    input.text {
+        outline: 0;
+        border-width: 0 0 1px;
+        border-color: #cccccc;
+        height: 24px;
+        padding-left: 0;
+    }
+
+    input.text:focus {
+        border-bottom-width: 2px;
+        border-color: #4285f4;
+    }
+
+    input.sent {
+        background-color: #4285f4;
+        border-color: #4285f4;
+        border-style: solid;
+        border-width: 1px;
+        height: 36px;
+        width: 90px;
+        border-radius: 4px;
+        color: white;
+        font-family: Arial;
+        font-size: 11;
+        font-weight: 600;
+        margin-bottom: 12px;
+        outline: 0;
+    }
+
+    input.sent:focus {
+        background-color: #5c95f2;
+    }
+
+    input.clear {
+        background-color: transparent;
+        border-width: 0px;
+        height: 30px;
+        width: 58px;
+        color: #4285f4;
+        font-family: Arial;
+        font-size: 11;
+        font-weight: 600;
+        text-align: right;
+        margin-bottom: 12px;
+        outline: 0;
+    }
+</style>
+
+<body style="background-color: #e3edfd">
+    <form name="formulario_contato" id="formulario_contato" method="POST" action="formulario_resposta.html">
+        <table class="top" border="1" width="50%" align="center" cellspacing="10px">
+            <tr>
+                <td class="title">Formulário de Contato</td>
+            </tr>
+            <tr>
+                <td class="res">
+                    Caso você queira conversar comigo, insira seus dados abaixo e deixe seu recado.<br>
+                    Fique à vontade para dizer o que quiser.
+                </td>
+            </tr>
+        </table>
+        <table cellspacing="6px;">
+            <tr>
+                <td> </td>
+            </tr>
+        </table>
+        <table class="default" border="1" width="50%" align="center" cellspacing="10px">
+            <tr>
+                <td class="per">
+                    Nome
+                </td>
+            </tr>
+            <tr>
+                <td class="res">
+                    <input class="text" style="width: 50%;" tabindex="1" type="text" name="nome" id="nome"
+                        placeholder="Sua resposta" />
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="50%" align="center" cellspacing="6px;">
+            <tr>
+                <td> </td>
+            </tr>
+        </table>
+        <table class="default" border="1" width="50%" align="center" cellspacing="10px">
+            <tr>
+                <td class="per">
+                    Telefone
+                </td>
+            </tr>
+            <tr>
+                <td class="res">
+                    <input class="text" style="width: 50%;" tabindex="2" type="text" name="tel" id="tel"
+                        placeholder="Sua resposta" />
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="50%" align="center" cellspacing="6px;">
+            <tr>
+                <td> </td>
+            </tr>
+        </table>
+        <table class="default" border="1" width="50%" align="center" cellspacing="10px">
+            <tr>
+                <td class="per">
+                    E-mail
+                </td>
+            </tr>
+            <tr>
+                <td class="res">
+                    <input class="text" style="width: 50%;" tabindex="3" type="text" name="email" id="email"
+                        placeholder="Sua resposta" />
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="50%" align="center" cellspacing="6px;">
+            <tr>
+                <td> </td>
+            </tr>
+        </table>
+        <table class="default" border="1" width="50%" align="center" cellspacing="10px">
+            <tr>
+                <td class="per">
+                    Mensagem
+                </td>
+            </tr>
+            <tr>
+                <td class="res">
+                    <input class="text" style="width: 100%;" tabindex="4" type="text" name="email" id="email"
+                        placeholder="Sua resposta" />
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="50%" align="center" cellspacing="4px;">
+            <tr>
+                <td> </td>
+            </tr>
+        </table>
+        <table width="50%" align="center" border="0">
+            <tr>
+                <td align="left">
+                    <input class="sent" tabindex="4" type="submit" value="Enviar" />
+                </td>
+                <td align="right">
+                    <input class="clear" tabindex="5" type="reset" value="Limpar" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="analytics.js"></script>
+</body>
+
+</html>
