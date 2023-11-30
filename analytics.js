@@ -1,4 +1,3 @@
-/*
 // Criando o tag script dinamicamente e adicionando no HTML
 var newScript = document.createElement("script");
 newScript.type = "text/javascript";
@@ -12,4 +11,3 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-49FJ8S254V');
-*/
